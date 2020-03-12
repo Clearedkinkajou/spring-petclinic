@@ -23,7 +23,7 @@ pipeline {
         }
     }
     post {
-    	sucess {
+    	success {
         	sh 'echo $ echo "build passed" | mail -s "Jenkins Question 1 - Build Passed" bedardjake@gmail.com'
     	}
    }
