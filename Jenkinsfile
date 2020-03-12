@@ -27,7 +27,7 @@ pipeline {
     }
     post {
     	success {
-        	sh 'echo $ echo "build passed" | mail -s "Jenkins Question 1 - Build Passed" bedardjake@gmail.com'
+    	    slackSend(color: 'good', message: "Build Passed - Question 1 - Jake Bedard")
     	}
    }
 
