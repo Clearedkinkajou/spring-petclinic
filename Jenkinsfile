@@ -24,7 +24,7 @@ pipeline {
     }
     post {
     	sucess {
-        	echo $ echo "build passed" | mail -s "Jenkins Question 1 - Build Passed" bedardjake@gmail.com
+        	sh 'echo $ echo "build passed" | mail -s "Jenkins Question 1 - Build Passed" bedardjake@gmail.com'
     	}
    }
 
